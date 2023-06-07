@@ -1,0 +1,236 @@
+<html lang="en">
+
+    
+    <title>creating a table</title>
+
+ID NAME AGE SALARY DESIGNATION
+    1  aghg  24  2000   hghag
+     aghaghadlfhldfhg
+
+</html>
+
+<!--with out head and body tag the code will run-->
+
+
+<!-- TH:table heading/ TD:table data/TR: table row, Now I will write a command to make a table-->
+<table>
+<tr> 
+    <th> ID </th>
+    <th> NAME </th>
+    <th> AGE </th>
+</tr>
+
+ <tr> 
+<td>1</td>
+<td>2</td>
+<td>3</td>
+ </tr>
+
+ <tr>
+<td>jabba1
+    <td> jabba2</td>
+    <td>jabba3</td>
+
+ </tr>
+
+<tr>
+<td> 17 Saal</td>
+<td> 18 saal </td>
+<td> 19 saal </td>
+
+
+</tr>
+
+</table>
+<!--the above code will represent the data in the table format but there will be no border, the following code will show the border representation-->
+
+<table border="1"> 
+
+
+<tr> 
+    <th> ID </th>
+    <th> NAME </th>
+    <th> AGE </th>
+    <th> place </th>
+</tr>
+
+ <tr> 
+<td>1</td>
+<td>jabba1</td>
+<td>17 saal</td>
+<td>Indore</td>
+ </tr>
+
+ <tr>
+<td>2</td>
+    <td> jabba2</td>
+    <td>18 saal </td>
+    <td>indore</td>
+
+ </tr>
+
+<tr>
+<td> 3</td>
+<td> jabba3</td>
+<td> 19 saal </td>
+<td> delhi</td>
+
+</tr>
+
+<tr>
+<td>4</td>
+    <td> jabba4</td>
+    <td>20 saal</td>
+    <td>delhi</td>
+
+
+
+</tr>
+
+</table>
+
+<!-- to merge two cells I will use the command " rowspan="2" "-->
+
+<table border="1"> 
+
+
+    <tr> 
+        <th> ID </th>
+        <th> NAME </th>
+        <th> AGE </th>
+        <th> place </th>
+    </tr>
+    
+     <tr> 
+    <td>1</td>
+    <td>jabba1</td>
+    <td>17 saal</td>
+    <td rowspan="2">Indore</td>
+     </tr>
+    
+     <tr>
+    <td>2</td>
+        <td> jabba2</td>
+        <td>18 saal </td>
+        <td>indore</td>
+    
+     </tr>
+    
+    <tr>
+    <td> 3</td>
+    <td> jabba3</td>
+    <td> 19 saal </td>
+    <td rowspan="2"> delhi</td>
+    
+    </tr>
+    
+    <tr>
+    <td>4</td>
+        <td> jabba4</td>
+        <td>20 saal</td>
+        <td>delhi</td>
+    
+    
+    
+    </tr>
+    
+    </table>
+
+    <!--after excuting the above to command we can see that two row cells have been unified and there are two extra cells from row 2 and row 4, we can remove the cell source code and finalise the code lik this-->
+
+    <table border="1"> 
+
+
+        <tr> 
+            <th> ID </th>
+            <th> NAME </th>
+            <th> AGE </th>
+            <th> place </th>
+        </tr>
+        
+         <tr> 
+        <td>1</td>
+        <td>jabba1</td>
+        <td>17 saal</td>
+        <td rowspan="2">Indore</td>
+         </tr>
+        
+         <tr>
+        <td>2</td>
+            <td> jabba2</td>
+            <td>18 saal </td>
+            <!--<td>indore</td>--> <!-- or we can comment command to prevent to code from executing-->
+        
+         </tr>
+        
+        <tr>
+        <td> 3</td>
+        <td> jabba3</td>
+        <td> 19 saal </td>
+        <td rowspan="2"> delhi</td>
+        
+        </tr>
+        
+        <tr>
+        <td>4</td>
+            <td> jabba4</td>
+            <td>20 saal</td>
+        
+        
+        
+        
+        </tr>
+        
+        </table>
+
+        <!-- to merge two columns we use colspan="", however this commmand does only merge individual cells and does not merge the whole column. following code should clarify more-->
+    
+        <table border="1"> 
+
+
+            <tr> 
+                <th colspan="2"> ID </th>
+                <th> NAME </th>
+                <th> AGE </th>
+                <th> place </th>
+            </tr>
+            
+             <tr> 
+            <td>1</td>
+            <td>jabba1</td>
+            <td>17 saal</td>
+            <td rowspan="2">Indore</td>
+             </tr>
+            
+             <tr>
+            <td>2</td>
+                <td> jabba2</td>
+                <td>18 saal </td>
+                <!--<td>indore</td>-->
+            
+             </tr>
+            
+            <tr>
+            <td> 3</td>
+            <td> jabba3</td>
+            <td> 19 saal </td>
+            <td rowspan="2"> delhi</td>
+            
+            </tr>
+            
+            <tr>
+            <td>4</td>
+                <td> jabba4</td>
+                <td>20 saal</td>
+                <!--<td>delhi</td>-->
+            
+            
+            
+            </tr>
+            
+            </table>
+
+
+
+
+
